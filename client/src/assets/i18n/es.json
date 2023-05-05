@@ -1,0 +1,19 @@
+{
+        "SiteTitle": "Data App",
+        "Greeting": "Bienvenido ",
+        "Submit":"Aceptar",
+        "Register":"Registrarse",
+        "Matches":"Matches",
+        "Lists":"Listados",
+        "Messages":"Mensages",
+        "Logout":"Logout",
+        "Logint":"Login",
+        "EditProfile":"Editar Perfil",
+        "RegisterTitle":"Registrar",
+        "Cancel":"Cancelar",
+        "Username":"Usuario",
+        "Password":"Contraseña",
+        "LearnMore":"Saber más",
+        "HomeTittle":"Encuentra tu pareja",
+        "HomeMessage":"Entra para ver tus matches... ¡todo lo que tienes que hacer es registrarte!"
+    }

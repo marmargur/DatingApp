@@ -4,6 +4,7 @@ import { Observable, of } from 'rxjs';
 import { User } from '../_models/user';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nav',
@@ -15,7 +16,11 @@ export class NavComponent implements OnInit {
   currentUser$: Observable<User | null> = of(null);
 
   constructor(public accountService: AccountService, private router: Router,
-    private toastr:ToastrService) { }
+    private toastr:ToastrService,public translate: TranslateService
+    ) {
+      translate.addLangs(['es', 'en']);
+      translate.setDefaultLang('es');
+    }
 
   ngOnInit(): void {
 
@@ -33,4 +38,7 @@ export class NavComponent implements OnInit {
     this.router.navigateByUrl('/');
   }
 
+  switchLang(lang: string) {
+    this.translate.use(lang);
+  }
 }
