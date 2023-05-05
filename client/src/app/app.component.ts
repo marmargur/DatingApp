@@ -8,8 +8,6 @@ import { User } from './_models/user';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'Dating app';
-
   constructor(private accountService: AccountService){}
 
   ngOnInit(): void {

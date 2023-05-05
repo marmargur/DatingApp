@@ -15,5 +15,6 @@
         "Password":"Contraseña",
         "LearnMore":"Saber más",
         "HomeTittle":"Encuentra tu pareja",
-        "HomeMessage":"Entra para ver tus matches... ¡todo lo que tienes que hacer es registrarte!"
+        "HomeMessage":"Entra para ver tus matches... ¡todo lo que tienes que hacer es registrarte!",
+        "Errors": "Errores"
     }

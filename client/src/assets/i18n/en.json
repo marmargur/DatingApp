@@ -15,5 +15,6 @@
     "Password":"Password",
     "LearnMore":"Learn more",
     "HomeTittle":"Find your match",
-    "HomeMessage":"Come on in to view your matches... all you need to do is sign up!"
+    "HomeMessage":"Come on in to view your matches... all you need to do is sign up!",
+    "Errors": "Errors"
 }
