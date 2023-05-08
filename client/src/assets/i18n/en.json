@@ -26,7 +26,15 @@
     "LookingFor":"Looking for",
     "Interests":"Interests",
     "About":"About",
-    "Photos":"Photos"
+    "Photos":"Photos",
+    "YourProfile":"Your profile",
+    "Information": "Information",
+    "MsgEditInformation":"You have made changes.  Any unsaved changes will be lost",
+    "EditPhotos":"Edit Photos",
+    "LocationDetails":"Location Details",
+    "City":"City",
+    "Country":"Country",
+    "SaveChanges":"Save changes"
     
     
     

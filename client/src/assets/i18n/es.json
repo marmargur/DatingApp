@@ -21,10 +21,19 @@
         "MemberSince":"Miembro desde",
         "LastActive":"Última conexión",
         "Age":"Edad",
-        "Location":"Ciudad",
+        "Location":"Localización",
         "Description":"Descripción",
         "LookingFor":"Busca",
         "Interests":"Intereses",
         "About":"Sobre",
-        "Photos":"Fotos"
+        "Photos":"Fotos",
+        "YourProfile":"Tu perfil", 
+        "Information": "Información",
+        "MsgEditInformation":"Has realizado algunos cambios. Los cambios no guardados se perderán.",
+        "EditPhotos":"Editar Fotos",
+        "LocationDetails":"Detalle de localización",
+        "City":"Ciudad",
+        "Country":"País",
+        "SaveChanges":"Guardar los cambios"
+        
     }
