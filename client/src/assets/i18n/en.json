@@ -16,5 +16,18 @@
     "LearnMore":"Learn more",
     "HomeTittle":"Find your match",
     "HomeMessage":"Come on in to view your matches... all you need to do is sign up!",
-    "Errors": "Errors"
+    "Errors": "Errors",
+    "Like": "Like",
+    "MemberSince":"Member since",
+    "LastActive":"Last active",
+    "Age":"Age",
+    "Location":"Location",
+    "Description":"Description",
+    "LookingFor":"Looking for",
+    "Interests":"Interests",
+    "About":"About",
+    "Photos":"Photos"
+    
+    
+    
 }

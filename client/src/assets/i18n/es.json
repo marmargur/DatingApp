@@ -5,7 +5,7 @@
         "Register":"Registrarse",
         "Matches":"Matches",
         "Lists":"Listados",
-        "Messages":"Mensages",
+        "Messages":"Mensajes",
         "Logout":"Logout",
         "Logint":"Login",
         "EditProfile":"Editar Perfil",
@@ -16,5 +16,15 @@
         "LearnMore":"Saber más",
         "HomeTittle":"Encuentra tu pareja",
         "HomeMessage":"Entra para ver tus matches... ¡todo lo que tienes que hacer es registrarte!",
-        "Errors": "Errores"
+        "Errors": "Errores",
+        "Like": "Me gusta",
+        "MemberSince":"Miembro desde",
+        "LastActive":"Última conexión",
+        "Age":"Edad",
+        "Location":"Ciudad",
+        "Description":"Descripción",
+        "LookingFor":"Busca",
+        "Interests":"Intereses",
+        "About":"Sobre",
+        "Photos":"Fotos"
     }
