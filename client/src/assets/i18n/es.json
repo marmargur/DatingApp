@@ -1,6 +1,6 @@
 {
         "SiteTitle": "Data App",
-        "Greeting": "Bienvenido ",
+        "Greeting": "Bienvenid@ ",
         "Submit":"Aceptar",
         "Register":"Registrarse",
         "Matches":"Matches",
@@ -34,6 +34,19 @@
         "LocationDetails":"Detalle de localización",
         "City":"Ciudad",
         "Country":"País",
-        "SaveChanges":"Guardar los cambios"
+        "SaveChanges":"Guardar los cambios",
+        "Main":"Principal",
+        "DropPhotos":"Arrastra la foto aquí",
+        "RemoveAll":"Eliminar todo",
+        "CancelAll":"Cancelar todo",
+        "UploadAll":"Subir todo",
+        "QueueProgress":"Progreso de la cola",
+        "Size":"Tamaño",
+        "Name":"Nombre",
+        "UploadQueue":"Subir cola",
+        "QueueLength":"Tamaño de la cola",
+        "AddPhotos":"Añadir Fotos",
+        "Single":"Simple",
+        "Multiple":"Múltiple"   
         
     }

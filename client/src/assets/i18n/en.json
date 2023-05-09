@@ -34,8 +34,20 @@
     "LocationDetails":"Location Details",
     "City":"City",
     "Country":"Country",
-    "SaveChanges":"Save changes"
-    
+    "SaveChanges":"Save changes",
+    "Main":"Main",
+    "DropPhotos":"Drop photos here",
+    "RemoveAll":"Remove all",
+    "CancelAll":"Cancel all",
+    "UploadAll":"Upload all",
+    "QueueProgress":"Queue progress",
+    "Size":"Size",
+    "Name":"Name",
+    "UploadQueue":"Upload queue",
+    "QueueLength":"Queue length",
+    "AddPhotos":"Add Photos",
+    "Single":"Single",
+    "Multiple":"Multiple"   
     
     
 }
