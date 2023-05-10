@@ -1,0 +1,21 @@
+<div class="mb-3">
+    <input 
+        type={{type}}
+        [class.is-invalid]="control.touched && control.invalid"
+        class="form-control" 
+        [formControl]="control"
+        placeholder={{label}}
+    >
+    <div class="invalid-feedback" *ngIf="control.errors?.['required']">
+        {{'MsgValPleaseEnter' | translate }} {{label}}
+    </div>
+    <div class="invalid-feedback" *ngIf="control.errors?.['minlength']">
+        {{label}} {{'MsgValMustLeast' | translate }} {{control.errors?.['minlength'].requiredLength}} {{'characters' | translate }}
+    </div>
+    <div class="invalid-feedback" *ngIf="control.errors?.['maxlength']">
+        {{label}} {{'MsgValMustMost' | translate }}must be at most {{control.errors?.['maxlength'].requiredLength}} {{'characters' | translate }}
+    </div>
+    <div class="invalid-feedback" *ngIf="control.errors?.['notMatching']">
+        {{'MsgValPasswordsMatch' | translate }}
+    </div>
+</div>

@@ -1,24 +1,43 @@
-<form #registerForm="ngForm" (ngSubmit)="register()" autocomplete="off">
+<form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && register()" autocomplete="off">
     <h2 class="text-center text-primary">{{'RegisterTitle' | translate }}</h2>
     <hr>
+
     <div class="mb-3">
-        <input type="text"
-            class="form-control"
-            name="username"
-            [(ngModel)]="model.username"
-            placeholder="{{'Username' | translate }}"
-        >
+        <label style="margin-right:10px">{{'RegisterMenssage' | translate }}: </label>
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" value="male" formControlName="gender"> {{'Male' | translate }}
+        </label>
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input ms-3" value="female" formControlName="gender"> {{'Female' | translate }}
+        </label>
     </div>
-    <div class="mb-3">
-        <input type="password"
-            class="form-control"
-            name="password"
-            [(ngModel)]="model.password"
-            placeholder="{{'Password' | translate }}"
-        >
+
+    <app-text-input [formControl]="$any(registerForm.controls['username'])" in1 
+        [label]="'Username' | translate"></app-text-input>
+    <app-text-input [formControl]="$any(registerForm.controls['knownAs'])" 
+        [label]="'KnownAs'| translate"></app-text-input>
+    <app-date-picker [formControl]="$any(registerForm.controls['dateOfBirth'])" 
+        [label]="'DateOfBirth' | translate" [maxDate]="maxDate"></app-date-picker >
+    <app-text-input [formControl]="$any(registerForm.controls['city'])" 
+        [label]="'City' | translate"></app-text-input>
+    <app-text-input [formControl]="$any(registerForm.controls['country'])" 
+        [label]="'Country' | translate"></app-text-input>
+    <app-text-input [formControl]="$any(registerForm.controls['password'])" 
+        [label]="'Password' | translate" [type]="'password'"></app-text-input>
+    <app-text-input [formControl]="$any(registerForm.controls['confirmPassword'])" 
+        [label]="'ConfirmPassword' | translate"
+        [type]="'password'"></app-text-input>
+
+    <div class="row" *ngIf="validationErrors">
+        <ul class="text-danger">
+            <li *ngFor="let error of validationErrors">
+                {{error}}
+            </li>
+        </ul>
     </div>
+
     <div class="text-center">
-        <button class="btn btn-success me-2" type="submit">{{'Register' | translate }}</button>
+        <button [disabled]="!registerForm.valid" class="btn btn-success me-2" type="submit">{{'Register' | translate }}</button>
         <button class="btn btn-default" type="button" (click)="cancel()">{{'Cancel' | translate }}</button>
     </div>
 </form>

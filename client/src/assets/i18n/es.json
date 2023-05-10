@@ -13,6 +13,7 @@
         "Cancel":"Cancelar",
         "Username":"Usuario",
         "Password":"Contraseña",
+        "ConfirmPassword":"Confirmar Contraseña",
         "LearnMore":"Saber más",
         "HomeTittle":"Encuentra tu pareja",
         "HomeMessage":"Entra para ver tus matches... ¡todo lo que tienes que hacer es registrarte!",
@@ -47,6 +48,16 @@
         "QueueLength":"Tamaño de la cola",
         "AddPhotos":"Añadir Fotos",
         "Single":"Simple",
-        "Multiple":"Múltiple"   
+        "Multiple":"Múltiple",
+        "RegisterMenssage":"Yo soy"  ,
+        "MsgValPleaseEnter":"Por favor introduzca un",
+        "MsgValMustLeast":"al menos debe ser",
+        "MsgValMustMost":"debe ser como máximo",
+        "MsgValPasswordsMatch":"Las contraseñas no coinciden",
+        "Male":"Masculino",
+        "Female":"Femenino" ,
+        "characters":"caracteres",
+        "KnownAs":"Conocido como",
+        "DateOfBirth":"Fecha de nacimiento"
         
     }
