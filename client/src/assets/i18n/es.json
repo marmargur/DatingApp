@@ -58,6 +58,16 @@
         "Female":"Femenino" ,
         "characters":"caracteres",
         "KnownAs":"Conocido como",
-        "DateOfBirth":"Fecha de nacimiento"
+        "DateOfBirth":"Fecha de nacimiento",
+        "NewestMembers":"Miembros más nuevos",
+        "Found":"encontrados",
+        "YourMatches":"Tus matches",
+        "AgeFrom":"Edad desde",
+        "AgeTo":"Edad hasta",
+        "Show":"Mostrar",
+        "ApplyFilters":"Aplicar Filtros",
+        "ResetFilters":"Eliminar Filtros",
+        "Females":"Mujeres",
+        "Males":"Hombres"
         
     }

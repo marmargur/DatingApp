@@ -58,7 +58,17 @@
     "Female":"Female",
     "characters":"characters",
     "KnownAs":"Known As",
-    "DateOfBirth":"Date of Birth"
+    "DateOfBirth":"Date of Birth",
+    "NewestMembers":"Newest members",
+    "Found":"found",
+    "YourMatches":"Your matches",
+    "AgeFrom":"Age from",
+    "AgeTo":"Age to",
+    "Show":"Show",
+    "ApplyFilters":"Apply Filters",
+    "ResetFilters":"Reset Filters",
+    "Females":"Females",
+    "Males":"Males"
     
     
 }
