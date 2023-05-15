@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 
 namespace API.Controllers
 {
-    public class BuggyController : BaseApiControllers
+    public class BuggyController : BaseApiController
     {
         private readonly DataContext _context;
 

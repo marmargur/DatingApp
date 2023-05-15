@@ -10,7 +10,7 @@ using AutoMapper;
 
 namespace API.Controllers
 {
-    public class AccountController : BaseApiControllers
+    public class AccountController : BaseApiController
     {
         private readonly DataContext _context;
         private readonly ITokenService _tokenService;

@@ -68,6 +68,9 @@
         "ApplyFilters":"Aplicar Filtros",
         "ResetFilters":"Eliminar Filtros",
         "Females":"Mujeres",
-        "Males":"Hombres"
+        "Males":"Hombres",
+        "MsgLiked":"Te ha gustado",
+        "MsgMembersILike":"Miembros que me gustan",
+        "MsgMembersWhoLike":"Miembros a los que les gusto"
         
     }

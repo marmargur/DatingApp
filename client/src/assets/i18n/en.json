@@ -68,7 +68,10 @@
     "ApplyFilters":"Apply Filters",
     "ResetFilters":"Reset Filters",
     "Females":"Females",
-    "Males":"Males"
+    "Males":"Males",
+    "MsgLiked":"You have liked",
+    "MsgMembersILike":"Members I like",
+    "MsgMembersWhoLike":"Members who like me"
     
     
 }
