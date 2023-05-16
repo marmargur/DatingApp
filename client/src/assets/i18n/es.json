@@ -83,6 +83,14 @@
         "Inbox":"Bandeja de entrada",
         "Outbox":"Bandeja de salida",
         "FromTo":"De / A",
-        "SentReceived":"Enviado / Recibido"
+        "SentReceived":"Enviado / Recibido",
+        "Admin":"Administrador",
+        "ErrorAccesArea":"No tiene acceso a este área",
+        "EditRoles":"Editar Roles",
+        "ActiveRoles":"Roles activos",
+        "AdminPanel":"Panel administrador",
+        "PhotoManagement":"Administrador de Fotos",
+        "UserManagement":"Administrador de Usuario",
+        "EditRolesFor":"Editar rol para"
         
     }

@@ -83,8 +83,15 @@
     "Inbox":"Inbox",
     "Outbox":"Outbox",
     "FromTo":"From / To",
-    "SentReceived":"Sent / Received"
-
+    "SentReceived":"Sent / Received",
+    "Admin":"Admin",
+    "ErrorAccesArea":"You cannot enter this area",
+    "EditRoles":"Edit Roles",
+    "ActiveRoles":"Active roles",
+    "AdminPanel":"Admin Panel",
+    "PhotoManagement":"Photo management",
+    "UserManagement":"User management",
+    "EditRolesFor":"Edit Roles for"
     
     
 }
