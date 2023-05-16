@@ -5,7 +5,8 @@
         "Register":"Registrarse",
         "Matches":"Matches",
         "Lists":"Listados",
-        "Messages":"Mensajes",
+        "Messages":"Mensajes",  
+        "Message":"Mensaje",
         "Logout":"Logout",
         "Logint":"Login",
         "EditProfile":"Editar Perfil",
@@ -71,6 +72,17 @@
         "Males":"Hombres",
         "MsgLiked":"Te ha gustado",
         "MsgMembersILike":"Miembros que me gustan",
-        "MsgMembersWhoLike":"Miembros a los que les gusto"
+        "MsgMembersWhoLike":"Miembros a los que les gusto",
+        "MsgNoMessagesYet":"Aún no hay mensajes... saluda usando el cuadro de mensaje a continuación",
+        "MsgNoMessages":"No  hay mensajes",
+        "BtnSend":"Enviar",
+        "Unread":"no leído",
+        "UnRead":"No leído",
+        "Read":"leer",
+        "SendMessage":"Enviar un mensaje privado",
+        "Inbox":"Bandeja de entrada",
+        "Outbox":"Bandeja de salida",
+        "FromTo":"De / A",
+        "SentReceived":"Enviado / Recibido"
         
     }

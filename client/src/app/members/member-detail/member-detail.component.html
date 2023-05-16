@@ -1,12 +1,9 @@
-<div class="row" *ngIf="member">
+<div class="row">
     <div class="col-4">
         <div class="card">
             <img src="{{member.photoUrl || './assets/user.png'}}" alt="{{member.knownAs}}"
                 class="card-img-top img-thumbnail">
             <div class="card-body">
-               <!-- <div class="mb-2" *ngIf="(presenceService.onlineUsers$ | async)?.includes(member.userName)">
-                    <i class="class fa fa-user-circle text-success"></i> Online now
-                </div>-->
                 <div>
                     <strong>{{'Location' | translate }}:</strong>
                     <p>{{member.city}}, {{member.country}}</p>
@@ -27,8 +24,7 @@
             <div class="card-footer">
                 <div class="btn-group d-flex">
                     <button class="btn btn-primary">{{'Like' | translate }}</button>
-                    <button class="btn btn-success">{{'Messages' | translate }}</button>
-                    <!--<button (click)="selectTab('Messages')" class="btn btn-success">Messages</button>-->
+                    <button (click)="selectTab('Messages')" class="btn btn-success">{{'Messages' | translate }}</button>
                 </div>
             </div>
         </div>
@@ -37,22 +33,21 @@
 
     <div class="col-8">
         <tabset class="member-tabset" #memberTabs>
-            <tab heading="{{'About' | translate }} {{member.knownAs}}"  >
+            <tab heading="{{'About' | translate }} {{member.knownAs}}" id="About" (selectTab)="onTabActivated($event)">
                 <h4>{{'Description' | translate }}</h4>
                 <p>{{member.introduction}}</p>
                 <h4>{{'LookingFor' | translate }}</h4>
                 <p>{{member.lookingFor}}</p>
             </tab>
-            <tab heading="{{'Interests' | translate }}"  >
+            <tab heading="{{'Interests' | translate }}" id="Interests" (selectTab)="onTabActivated($event)"  >
                 <h4>{{'Interests' | translate }}</h4>
                 <p>{{member.interests}}</p>
             </tab>
-            <tab heading="{{'Photos' | translate }}"  >               
+            <tab heading="{{'Photos' | translate }}" id="Photos" (selectTab)="onTabActivated($event)" >               
                 <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
             </tab>
-            <tab heading="{{'Messages' | translate }}"  >
-                <p>Los mensajes irán aquí</p>
-                <!--<app-member-messages [username]="member.userName"></app-member-messages>-->
+           <tab heading="{{'Messages' | translate }}" id="Messages"  (selectTab)="onTabActivated($event)"  >
+                <app-member-messages [messages]="messages" [username]="member.userName"></app-member-messages>
             </tab>
         </tabset>
     </div>

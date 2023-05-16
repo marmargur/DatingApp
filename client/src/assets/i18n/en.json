@@ -6,6 +6,7 @@
     "Matches":"Matches",
     "Lists":"Lists",
     "Messages":"Messages",
+    "Message":"Message",
     "Logout":"Logout",
     "Logint":"Login",
     "EditProfile":"Edit Profile",
@@ -71,7 +72,19 @@
     "Males":"Males",
     "MsgLiked":"You have liked",
     "MsgMembersILike":"Members I like",
-    "MsgMembersWhoLike":"Members who like me"
+    "MsgMembersWhoLike":"Members who like me",
+    "MsgNoMessagesYet":"No messages yet... say hi by using the message box below",
+    "MsgNoMessages":"No messages",
+    "BtnSend":"Send",
+    "Unread":"unread",
+    "UnRead":"Unread",
+    "Read":"read",
+    "SendMessage":"Send a private message",
+    "Inbox":"Inbox",
+    "Outbox":"Outbox",
+    "FromTo":"From / To",
+    "SentReceived":"Sent / Received"
+
     
     
 }
