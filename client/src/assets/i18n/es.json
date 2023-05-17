@@ -91,6 +91,7 @@
         "AdminPanel":"Panel administrador",
         "PhotoManagement":"Administrador de Fotos",
         "UserManagement":"Administrador de Usuario",
-        "EditRolesFor":"Editar rol para"
+        "EditRolesFor":"Editar rol para",
+        "OnlineNow":"Conectado ahora"
         
     }

@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild  } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnDestroy, OnInit, ViewChild  } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Member } from 'src/app/_models/member';
 import { MembersService } from 'src/app/_services/members.service';
 import { TabDirective, TabsetComponent } from 'ngx-bootstrap/tabs';
@@ -7,23 +7,36 @@ import { NgxGalleryAnimation, NgxGalleryImage, NgxGalleryOptions } from '@kolkov
 import { Message } from 'src/app/_models/message';
 import { MessageService } from 'src/app/_services/message.service';
 import { TranslateService } from '@ngx-translate/core';
+import { AccountService } from 'src/app/_services/account.service';
+import { PresenceService } from 'src/app/_services/presence.service';
+import { User } from 'src/app/_models/user';
+import { take } from 'rxjs';
 
 @Component({
   selector: 'app-member-detail',
   templateUrl: './member-detail.component.html',
   styleUrls: ['./member-detail.component.css']
 })
-export class MemberDetailComponent implements OnInit {
+export class MemberDetailComponent implements OnInit, OnDestroy {
   @ViewChild('memberTabs', {static: true}) memberTabs?: TabsetComponent;
   member: Member = {} as Member;
   galleryOptions: NgxGalleryOptions[] = [];
   galleryImages: NgxGalleryImage[] = [];
   activeTab?: TabDirective;
   messages: Message[] = [];
+  user?: User;
 
-  constructor(private memberService: MembersService, private route: ActivatedRoute, 
-    private messageService: MessageService,
-    private translateService: TranslateService) { }
+  constructor(private accountService: AccountService, private route: ActivatedRoute, 
+    private messageService: MessageService, public presenceService: PresenceService, 
+    private router: Router,
+    private translateService: TranslateService) {
+      this.accountService.currentUser$.pipe(take(1)).subscribe({
+        next: user => {
+          if (user) this.user = user;
+        }
+      });
+      this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+     }
 
   ngOnInit(): void {
     this.route.data.subscribe({
@@ -48,6 +61,10 @@ export class MemberDetailComponent implements OnInit {
     ]
 
     this.galleryImages = this.getImages();
+  }
+
+  ngOnDestroy(): void {
+    this.messageService.stopHubConnection();
   }
 
   getImages() {
@@ -79,10 +96,12 @@ export class MemberDetailComponent implements OnInit {
 
   onTabActivated(data: TabDirective) {
     this.activeTab = data;
-    if (this.activeTab.id === 'Messages' ) {
+    if (this.activeTab.id === 'Messages' && this.user) {
     //if (this.activeTab.heading === 'Messages' ) {
     //if (this.activeTab.heading === this.translateService.instant('Messages') ) {
-      this.loadMessages();
+      this.messageService.createHubConnection(this.user, this.member.userName);
+    } else {
+      this.messageService.stopHubConnection();
     }
   }
 
